@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to Binary Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-glass">
+            <h1 class="title">Decimal ↔ Binary</h1>
+            <div class="converter-box">
+                <div class="input-group">
+                    <label for="decimal">Decimal</label>
+                    <input type="number" id="decimal" placeholder="Enter decimal number" class="input-field">
+                </div>
+                <div class="swap-btn" id="swapBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="17 13 21 9 17 5"></polyline>
+                        <path d="M21 9h-8a4 4 0 0 0-4 4v1"></path>
+                        <polyline points="7 11 3 15 7 19"></polyline>
+                        <path d="M3 15h8a4 4 0 0 0 4-4v-1"></path>
+                    </svg>
+                </div>
+                <div class="input-group">
+                    <label for="binary">Binary</label>
+                    <input type="text" id="binary" placeholder="Binary result" class="input-field" readonly>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button id="convertBtn" class="btn convert-btn">Convert</button>
+                <button id="resetBtn" class="btn reset-btn">Reset</button>
+            </div>
+            <div class="animation-circle"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
